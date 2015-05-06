@@ -1,12 +1,17 @@
 #include <fstream>
 using namespace std;
 
+//input: starting number of sequence and function (looking for CHANGE_ME in code)
+//output: "quiz" and "output" sequence into "output.txt"
+
+
 void gen_arr(int a0, int arr[12]);
 int function_1(int a, int n);// function of sequence 
 
 int main()
 {
 	int NUM_IN_QUIZ = 4;// CHANGE_ME - number of visible element in quiz
+						//remained number will change into ?
 
 	ofstream fout;
 	fout.open("output.txt");
